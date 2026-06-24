@@ -1,0 +1,811 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LITEAPKS – Gudang Game & Aplikasi Android</title>
+
+  <meta name="description" content="LITEAPKS menyediakan informasi game dan aplikasi Android terbaru. Jelajahi game, aplikasi, berita, dan kategori Android melalui Liteapks.id.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LITEAPKS – Gudang Game & Aplikasi Android">
+  <meta property="og:description" content="Temukan game, aplikasi, dan informasi Android terbaru melalui LITEAPKS.">
+  <meta property="og:image" content="https://liteapks.id/wp-content/uploads/2026/04/9dbc9359-fe8c-4888-9524-8d54acb07736.png">
+
+  <style>
+    :root {
+      --primary-color: #3e414f;
+      --secondary-color: #57ab1b;
+      --dark-color: #222222;
+      --text-color: #4d4d4d;
+      --gray-color: #727272;
+      --light-bg: #f5f6f7;
+      --border-color: #e6e6e6;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text-color);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.98);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .site-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .site-logo img {
+      width: 175px;
+      height: auto;
+    }
+
+    .main-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .main-menu a {
+      color: var(--dark-color);
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .main-menu a:hover {
+      color: var(--secondary-color);
+    }
+
+    .header-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 18px;
+      border-radius: 7px;
+      background: var(--primary-color);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .header-button:hover {
+      background: var(--secondary-color);
+      transform: translateY(-2px);
+    }
+
+    /* HERO */
+    .hero-section {
+      padding: 70px 0;
+      color: var(--white);
+      background:
+        linear-gradient(120deg, rgba(27, 31, 41, 0.92), rgba(62, 65, 79, 0.75)),
+        url("https://liteapks.id/wp-content/uploads/2026/04/9dbc9359-fe8c-4888-9524-8d54acb07736.png") center center / cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero-label {
+      display: inline-block;
+      padding: 6px 13px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 999px;
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-section h1 {
+      margin: 0 0 18px;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.18;
+    }
+
+    .hero-section p {
+      max-width: 710px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 17px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button-primary,
+    .button-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 21px;
+      border-radius: 7px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .button-primary {
+      color: var(--white);
+      background: var(--secondary-color);
+    }
+
+    .button-primary:hover {
+      background: #438c16;
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .button-outline:hover {
+      color: var(--primary-color);
+      background: var(--white);
+    }
+
+    /* CONTENT */
+    .section {
+      padding: 62px 0;
+    }
+
+    .section-light {
+      background: var(--light-bg);
+    }
+
+    .section-title {
+      margin: 0 0 10px;
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 31px;
+      line-height: 1.3;
+    }
+
+    .section-desc {
+      max-width: 700px;
+      margin: 0 auto 35px;
+      color: var(--gray-color);
+      text-align: center;
+    }
+
+    /* CATEGORY */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .category-card {
+      display: block;
+      min-height: 195px;
+      padding: 25px 22px;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      transition: 0.25s ease;
+    }
+
+    .category-card:hover {
+      border-color: var(--secondary-color);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      transform: translateY(-6px);
+    }
+
+    .category-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 17px;
+      border-radius: 10px;
+      background: var(--primary-color);
+      font-size: 22px;
+    }
+
+    .category-card h2 {
+      margin: 0 0 9px;
+      color: var(--dark-color);
+      font-size: 19px;
+      line-height: 1.35;
+    }
+
+    .category-card p {
+      margin: 0;
+      color: var(--gray-color);
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about-box {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 42px;
+      padding: 40px;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+    }
+
+    .about-content h2 {
+      margin: 0 0 15px;
+      color: var(--primary-color);
+      font-size: 31px;
+      line-height: 1.3;
+    }
+
+    .about-content p {
+      margin: 0 0 15px;
+      color: #5c5c5c;
+    }
+
+    .about-image {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .about-image img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      transition: 0.3s ease;
+    }
+
+    .about-image:hover img {
+      transform: scale(1.04);
+    }
+
+    /* POPULAR POSTS */
+    .popular-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .popular-card {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      transition: 0.25s ease;
+    }
+
+    .popular-card:hover {
+      border-color: var(--secondary-color);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+      transform: translateY(-5px);
+    }
+
+    .popular-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .popular-content {
+      padding: 16px;
+    }
+
+    .popular-category {
+      display: inline-block;
+      padding: 3px 9px;
+      margin-bottom: 8px;
+      border-radius: 999px;
+      color: var(--primary-color);
+      background: #eef0f3;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .popular-content h3 {
+      margin: 0 0 9px;
+      color: var(--dark-color);
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .popular-content p {
+      margin: 0;
+      color: var(--gray-color);
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-section {
+      padding: 65px 20px;
+      color: var(--white);
+      text-align: center;
+      background: var(--primary-color);
+    }
+
+    .cta-section h2 {
+      margin: 0 0 13px;
+      font-size: clamp(29px, 4vw, 42px);
+      line-height: 1.25;
+    }
+
+    .cta-section p {
+      max-width: 660px;
+      margin: 0 auto 26px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #f7f7f7;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 32px;
+      padding: 52px 0 40px;
+    }
+
+    .footer-brand img {
+      width: 175px;
+      margin-bottom: 17px;
+    }
+
+    .footer-brand p {
+      margin: 0;
+      color: #656565;
+      font-size: 14px;
+    }
+
+    .footer-column h3 {
+      margin: 3px 0 16px;
+      color: var(--primary-color);
+      font-size: 17px;
+    }
+
+    .footer-column ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column a {
+      color: #5e5e5e;
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .footer-column a:hover {
+      color: var(--secondary-color);
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      background: var(--white);
+      color: var(--primary-color);
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .social-links a:hover {
+      border-color: var(--secondary-color);
+      background: var(--secondary-color);
+      color: var(--white);
+    }
+
+    .copyright {
+      padding: 16px 0;
+      background: var(--dark-color);
+      color: #bcbcbc;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .copyright a {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 950px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-box {
+        grid-template-columns: 1fr;
+      }
+
+      .popular-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .main-menu {
+        gap: 17px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .header-inner {
+        min-height: 68px;
+      }
+
+      .site-logo img {
+        width: 145px;
+      }
+
+      .main-menu {
+        display: none;
+      }
+
+      .header-button {
+        padding: 9px 12px;
+        font-size: 12px;
+      }
+
+      .hero-section {
+        padding: 52px 0;
+      }
+
+      .hero-section p {
+        font-size: 15px;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+
+      .section-title {
+        font-size: 27px;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-box {
+        padding: 25px;
+      }
+
+      .about-content h2 {
+        font-size: 27px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="site-logo" href="https://liteapks.id/">
+        <img src="https://liteapks.id/wp-content/uploads/2026/04/logo-liteapks-1.png" alt="LITEAPKS">
+      </a>
+
+      <nav class="main-menu">
+        <a href="https://liteapks.id/">BERANDA</a>
+        <a href="https://liteapks.id/game/">GAME</a>
+        <a href="https://liteapks.id/app/">APLIKASI</a>
+        <a href="https://liteapks.id/tin-tuc/">TOPICS</a>
+      </nav>
+
+      <a class="header-button" href="https://liteapks.id/">
+        Kunjungi LITEAPKS
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero-section">
+      <div class="container hero-content">
+
+        <span class="hero-label">Platform Android Indonesia</span>
+
+        <h1>Temukan Game dan Aplikasi Android di LITEAPKS</h1>
+
+        <p>
+          LITEAPKS adalah tempat untuk menjelajahi informasi game dan aplikasi Android terbaru.
+          Temukan berbagai kategori game, aplikasi, berita Android, serta konten populer melalui website utama LITEAPKS.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button-primary" href="https://liteapks.id/">
+            Buka Website Utama
+          </a>
+
+          <a class="button-outline" href="https://liteapks.id/game/">
+            Lihat Game Android
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section-title">Jelajahi Kategori LITEAPKS</h2>
+
+        <p class="section-desc">
+          Kunjungi kategori utama LITEAPKS untuk menemukan game, aplikasi, berita, dan berbagai informasi Android lainnya.
+        </p>
+
+        <div class="category-grid">
+
+          <a class="category-card" href="https://liteapks.id/game/">
+            <div class="category-icon">🎮</div>
+            <h2>Game MOD APK</h2>
+            <p>
+              Jelajahi game Android dari genre aksi, balapan, simulasi, strategi, RPG, petualangan, dan masih banyak lagi.
+            </p>
+          </a>
+
+          <a class="category-card" href="https://liteapks.id/app/">
+            <div class="category-icon">📱</div>
+            <h2>Aplikasi Android</h2>
+            <p>
+              Temukan aplikasi hiburan, edit foto, produktivitas, alat, media sosial, dan aplikasi populer untuk Android.
+            </p>
+          </a>
+
+          <a class="category-card" href="https://liteapks.id/tin-tuc/berita-game/">
+            <div class="category-icon">📰</div>
+            <h2>Berita Game</h2>
+            <p>
+              Baca informasi terbaru mengenai update game, perilisan game, event, dan perkembangan dunia game Android.
+            </p>
+          </a>
+
+          <a class="category-card" href="https://liteapks.id/tin-tuc/berita-aplikasi/">
+            <div class="category-icon">✨</div>
+            <h2>Berita Aplikasi</h2>
+            <p>
+              Temukan rekomendasi serta pembaruan aplikasi Android yang menarik untuk digunakan sehari-hari.
+            </p>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+
+        <div class="about-box">
+
+          <div class="about-content">
+            <h2>Tentang LITEAPKS</h2>
+
+            <p>
+              LITEAPKS adalah platform yang membagikan informasi seputar game dan aplikasi Android untuk pengguna Indonesia.
+              Pengunjung dapat menemukan berbagai pilihan konten Android dalam satu tempat yang mudah dijelajahi.
+            </p>
+
+            <p>
+              Mulai dari game populer, aplikasi hiburan, aplikasi produktivitas, hingga berita Android terbaru, semuanya dapat ditemukan melalui kategori utama di Liteapks.id.
+            </p>
+
+            <a class="button-primary" href="https://liteapks.id/">
+              Kunjungi Liteapks.id
+            </a>
+          </div>
+
+          <a class="about-image" href="https://liteapks.id/">
+            <img src="https://liteapks.id/wp-content/uploads/2026/04/9dbc9359-fe8c-4888-9524-8d54acb07736.png" alt="LITEAPKS Game dan Aplikasi Android">
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section-title">Konten Populer di LITEAPKS</h2>
+
+        <p class="section-desc">
+          Berikut beberapa halaman game dan aplikasi yang dapat kamu kunjungi melalui LITEAPKS.
+        </p>
+
+        <div class="popular-grid">
+
+          <a class="popular-card" href="https://liteapks.id/subway-surfers-mod-apk/">
+            <img src="https://liteapks.id/wp-content/uploads/2026/04/unnamed-3.webp" alt="Subway Surfers MOD APK">
+
+            <div class="popular-content">
+              <span class="popular-category">Game</span>
+              <h3>Subway Surfers MOD APK</h3>
+              <p>
+                Kunjungi halaman Subway Surfers untuk melihat informasi game dan pembaruan versi terbaru.
+              </p>
+            </div>
+          </a>
+
+          <a class="popular-card" href="https://liteapks.id/youtube-lite/">
+            <img src="https://liteapks.id/wp-content/uploads/2026/05/youtube-lite-mod-apk-2.jpg" alt="Youtube Lite">
+
+            <div class="popular-content">
+              <span class="popular-category">Aplikasi</span>
+              <h3>Youtube Lite</h3>
+              <p>
+                Lihat informasi aplikasi Android dan berbagai kategori hiburan melalui Liteapks.id.
+              </p>
+            </div>
+          </a>
+
+          <a class="popular-card" href="https://liteapks.id/blockman-go-mod-apk/">
+            <img src="https://liteapks.id/wp-content/uploads/2026/04/blockman-go-mod-apk-1.jpg" alt="Blockman Go MOD APK">
+
+            <div class="popular-content">
+              <span class="popular-category">Game</span>
+              <h3>Blockman Go MOD APK</h3>
+              <p>
+                Jelajahi koleksi game Android lain melalui kategori Game yang tersedia di LITEAPKS.
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Jelajahi Game dan Aplikasi Android Sekarang</h2>
+
+      <p>
+        Kunjungi LITEAPKS untuk melihat game, aplikasi, kategori Android, dan artikel terbaru dalam satu platform.
+      </p>
+
+      <a class="button-primary" href="https://liteapks.id/">
+        Masuk ke LITEAPKS
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="https://liteapks.id/">
+          <img src="https://liteapks.id/wp-content/uploads/2026/04/logo-liteapks-1.png" alt="LITEAPKS">
+        </a>
+
+        <p>
+          LITEAPKS adalah platform informasi game dan aplikasi Android. Jelajahi game, aplikasi, kategori, serta berita Android melalui website utama.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Kategori</h3>
+
+        <ul>
+          <li><a href="https://liteapks.id/game/">Game Android</a></li>
+          <li><a href="https://liteapks.id/app/">Aplikasi Android</a></li>
+          <li><a href="https://liteapks.id/tin-tuc/">Topics</a></li>
+          <li><a href="https://liteapks.id/tin-tuc/berita-game/">Berita Game</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Informasi</h3>
+
+        <ul>
+          <li><a href="https://liteapks.id/">Beranda</a></li>
+          <li><a href="https://liteapks.id/?s=game">Cari Game</a></li>
+          <li><a href="https://liteapks.id/?s=aplikasi">Cari Aplikasi</a></li>
+          <li><a href="mailto:contact@liteapks.id">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Jejaring Sosial</h3>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/liteapks.id/" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/liteapksid/" aria-label="Instagram">ig</a>
+          <a href="https://x.com/liteapksid" aria-label="X">X</a>
+          <a href="https://id.pinterest.com/liteapskid/" aria-label="Pinterest">P</a>
+          <a href="https://www.linkedin.com/in/liteapks/" aria-label="LinkedIn">in</a>
+          <a href="https://youtube.com/@liteapksid" aria-label="Youtube">▶</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      Copyright 2026 ©
+      <a href="https://liteapks.id/">LITEAPKS</a>.
+      All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
+```
