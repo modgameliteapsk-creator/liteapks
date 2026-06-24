@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,7 +7,7 @@
 
   <title>LITEAPKS – Gudang Game & Aplikasi Android MOD APK</title>
 
-  <meta name="description" content="LITEAPKS menyediakan informasi game dan aplikasi Android terbaru. Jelajahi game, aplikasi, berita, dan kategori Android melalui Liteapks.id.">
+  <meta name="description" content="LITEAPKS menyediakan informasi game dan aplikasi Android terbaru. Jelajahi game, aplikasi, kategori, serta artikel Android melalui Liteapks.id.">
 
   <meta name="robots" content="index, follow">
 
@@ -17,13 +18,13 @@
 
   <style>
     :root {
-      --primary-color: #3e414f;
-      --secondary-color: #57ab1b;
-      --dark-color: #222222;
-      --text-color: #4d4d4d;
-      --gray-color: #727272;
-      --light-bg: #f5f6f7;
-      --border-color: #e6e6e6;
+      --primary: #3e414f;
+      --green: #57ab1b;
+      --dark: #222222;
+      --text: #505050;
+      --muted: #787878;
+      --light: #f5f6f7;
+      --border: #e7e7e7;
       --white: #ffffff;
     }
 
@@ -37,9 +38,9 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text-color);
+      color: var(--text);
       background: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
     }
 
@@ -64,7 +65,7 @@
       top: 0;
       z-index: 100;
       background: rgba(255, 255, 255, 0.98);
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border);
       backdrop-filter: blur(10px);
     }
 
@@ -79,6 +80,7 @@
     .site-logo {
       display: flex;
       align-items: center;
+      flex-shrink: 0;
     }
 
     .site-logo img {
@@ -93,14 +95,14 @@
     }
 
     .main-menu a {
-      color: var(--dark-color);
+      color: var(--dark);
       font-size: 14px;
       font-weight: 700;
       transition: 0.25s ease;
     }
 
     .main-menu a:hover {
-      color: var(--secondary-color);
+      color: var(--green);
     }
 
     .header-button {
@@ -109,26 +111,26 @@
       justify-content: center;
       padding: 11px 18px;
       border-radius: 7px;
-      background: var(--primary-color);
       color: var(--white);
+      background: var(--primary);
       font-size: 14px;
       font-weight: 700;
-      transition: 0.25s ease;
       white-space: nowrap;
+      transition: 0.25s ease;
     }
 
     .header-button:hover {
-      background: var(--secondary-color);
+      background: var(--green);
       transform: translateY(-2px);
     }
 
     /* HERO */
-    .hero-section {
-      padding: 70px 0;
+    .hero {
+      padding: 76px 0;
       color: var(--white);
       background:
-        linear-gradient(120deg, rgba(27, 31, 41, 0.92), rgba(62, 65, 79, 0.75)),
-        url("https://liteapks.id/wp-content/uploads/2026/04/9dbc9359-fe8c-4888-9524-8d54acb07736.png") center center / cover no-repeat;
+        linear-gradient(120deg, rgba(25, 29, 39, 0.93), rgba(62, 65, 79, 0.72)),
+        url("https://liteapks.id/wp-content/uploads/2026/04/9dbc9359-fe8c-4888-9524-8d54acb07736.png") center / cover no-repeat;
     }
 
     .hero-content {
@@ -141,17 +143,18 @@
       margin-bottom: 18px;
       border: 1px solid rgba(255, 255, 255, 0.35);
       border-radius: 999px;
-      font-size: 13px;
+      color: var(--white);
       background: rgba(255, 255, 255, 0.1);
+      font-size: 13px;
     }
 
-    .hero-section h1 {
+    .hero h1 {
       margin: 0 0 18px;
       font-size: clamp(34px, 5vw, 54px);
-      line-height: 1.18;
+      line-height: 1.16;
     }
 
-    .hero-section p {
+    .hero p {
       max-width: 710px;
       margin: 0;
       color: rgba(255, 255, 255, 0.92);
@@ -180,46 +183,46 @@
 
     .button-primary {
       color: var(--white);
-      background: var(--secondary-color);
+      background: var(--green);
     }
 
     .button-primary:hover {
-      background: #438c16;
+      background: #438d17;
       transform: translateY(-2px);
     }
 
     .button-outline {
-      color: var(--white);
       border: 1px solid rgba(255, 255, 255, 0.55);
+      color: var(--white);
       background: rgba(255, 255, 255, 0.08);
     }
 
     .button-outline:hover {
-      color: var(--primary-color);
+      color: var(--primary);
       background: var(--white);
     }
 
-    /* SECTION */
+    /* GENERAL SECTION */
     .section {
       padding: 62px 0;
     }
 
     .section-light {
-      background: var(--light-bg);
+      background: var(--light);
     }
 
     .section-title {
       margin: 0 0 10px;
-      color: var(--primary-color);
+      color: var(--primary);
       text-align: center;
       font-size: 31px;
       line-height: 1.3;
     }
 
     .section-desc {
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto 35px;
-      color: var(--gray-color);
+      color: var(--muted);
       text-align: center;
     }
 
@@ -232,16 +235,16 @@
 
     .category-card {
       display: block;
-      min-height: 195px;
+      min-height: 190px;
       padding: 25px 22px;
-      background: var(--white);
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border);
       border-radius: 12px;
+      background: var(--white);
       transition: 0.25s ease;
     }
 
     .category-card:hover {
-      border-color: var(--secondary-color);
+      border-color: var(--green);
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
       transform: translateY(-6px);
     }
@@ -254,45 +257,45 @@
       justify-content: center;
       margin-bottom: 17px;
       border-radius: 10px;
-      background: var(--primary-color);
+      background: var(--primary);
       font-size: 22px;
     }
 
     .category-card h2 {
       margin: 0 0 9px;
-      color: var(--dark-color);
+      color: var(--dark);
       font-size: 19px;
       line-height: 1.35;
     }
 
     .category-card p {
       margin: 0;
-      color: var(--gray-color);
+      color: var(--muted);
       font-size: 14px;
     }
 
     /* ABOUT */
     .about-box {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.1fr 0.9fr;
       align-items: center;
-      gap: 42px;
+      gap: 40px;
       padding: 40px;
-      background: var(--white);
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border);
       border-radius: 14px;
+      background: var(--white);
     }
 
     .about-content h2 {
       margin: 0 0 15px;
-      color: var(--primary-color);
+      color: var(--primary);
       font-size: 31px;
       line-height: 1.3;
     }
 
     .about-content p {
       margin: 0 0 15px;
-      color: #5c5c5c;
+      color: #5d5d5d;
     }
 
     .about-image {
@@ -311,14 +314,14 @@
       transform: scale(1.04);
     }
 
-    /* CATALOG GAME & APP */
+    /* CATALOG */
     .catalog-section {
-      padding: 62px 0;
+      padding: 64px 0;
       background: var(--white);
     }
 
     .catalog-group {
-      margin-top: 45px;
+      margin-top: 46px;
     }
 
     .catalog-group:first-of-type {
@@ -330,24 +333,24 @@
       align-items: center;
       justify-content: space-between;
       gap: 15px;
-      margin-bottom: 20px;
+      margin-bottom: 21px;
     }
 
     .catalog-heading h2 {
       margin: 0;
-      color: var(--primary-color);
-      font-size: 25px;
+      color: var(--primary);
+      font-size: 26px;
       line-height: 1.3;
     }
 
     .catalog-heading a {
-      color: var(--secondary-color);
+      color: var(--green);
       font-size: 14px;
       font-weight: 700;
     }
 
     .catalog-heading a:hover {
-      color: var(--primary-color);
+      color: var(--primary);
     }
 
     .catalog-grid {
@@ -359,73 +362,42 @@
     .catalog-card {
       display: block;
       overflow: hidden;
-      background: var(--white);
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border);
       border-radius: 13px;
+      background: var(--white);
       transition: 0.25s ease;
     }
 
     .catalog-card:hover {
-      border-color: var(--secondary-color);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+      border-color: var(--green);
+      box-shadow: 0 13px 30px rgba(0, 0, 0, 0.1);
       transform: translateY(-5px);
     }
 
-    .catalog-cover {
+    .catalog-image {
       position: relative;
-      min-height: 145px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       overflow: hidden;
+      background: #e9e9e9;
     }
 
-    .catalog-cover::before {
+    .catalog-image::after {
       content: "";
       position: absolute;
-      width: 160px;
-      height: 160px;
-      top: -55px;
-      right: -35px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.13);
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.36), transparent 65%);
+      pointer-events: none;
     }
 
-    .catalog-cover::after {
-      content: "";
-      position: absolute;
-      width: 120px;
-      height: 120px;
-      bottom: -60px;
-      left: -35px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
+    .catalog-image img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      transition: 0.35s ease;
     }
 
-    .catalog-icon {
-      position: relative;
-      z-index: 2;
-      font-size: 58px;
-      filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.18));
+    .catalog-card:hover .catalog-image img {
+      transform: scale(1.06);
     }
-
-    .game-cover-1 { background: linear-gradient(135deg, #2f6fbd, #12284e); }
-    .game-cover-2 { background: linear-gradient(135deg, #4ca84b, #174d2a); }
-    .game-cover-3 { background: linear-gradient(135deg, #d86e2c, #6f251c); }
-    .game-cover-4 { background: linear-gradient(135deg, #6c4ec7, #2d196b); }
-    .game-cover-5 { background: linear-gradient(135deg, #ce3d48, #661529); }
-    .game-cover-6 { background: linear-gradient(135deg, #255db3, #142c65); }
-    .game-cover-7 { background: linear-gradient(135deg, #5d5d5d, #1c1c1c); }
-    .game-cover-8 { background: linear-gradient(135deg, #e64c5b, #71152a); }
-
-    .app-cover-1 { background: linear-gradient(135deg, #111111, #555555); }
-    .app-cover-2 { background: linear-gradient(135deg, #1db954, #0f5b2b); }
-    .app-cover-3 { background: linear-gradient(135deg, #e93131, #791616); }
-    .app-cover-4 { background: linear-gradient(135deg, #1a1a1a, #ff2e55); }
-    .app-cover-5 { background: linear-gradient(135deg, #873bd7, #dc4db4); }
-    .app-cover-6 { background: linear-gradient(135deg, #00a7d8, #2d4ee8); }
-    .app-cover-7 { background: linear-gradient(135deg, #2f7ee6, #1a3e99); }
-    .app-cover-8 { background: linear-gradient(135deg, #d22128, #490b10); }
 
     .catalog-content {
       padding: 15px;
@@ -436,15 +408,15 @@
       padding: 3px 9px;
       margin-bottom: 9px;
       border-radius: 999px;
+      color: var(--primary);
       background: #eef0f3;
-      color: var(--primary-color);
       font-size: 11px;
       font-weight: 700;
     }
 
     .catalog-content h3 {
       margin: 0 0 8px;
-      color: var(--dark-color);
+      color: var(--dark);
       font-size: 16px;
       line-height: 1.35;
     }
@@ -453,7 +425,7 @@
       display: -webkit-box;
       margin: 0;
       overflow: hidden;
-      color: var(--gray-color);
+      color: var(--muted);
       font-size: 13px;
       line-height: 1.5;
       -webkit-box-orient: vertical;
@@ -465,7 +437,7 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 14px;
-      color: var(--secondary-color);
+      color: var(--green);
       font-size: 12px;
       font-weight: 700;
     }
@@ -477,10 +449,10 @@
 
     /* CTA */
     .cta-section {
-      padding: 65px 20px;
+      padding: 68px 20px;
       color: var(--white);
       text-align: center;
-      background: var(--primary-color);
+      background: var(--primary);
     }
 
     .cta-section h2 {
@@ -491,14 +463,14 @@
 
     .cta-section p {
       max-width: 660px;
-      margin: 0 auto 26px;
-      color: rgba(255, 255, 255, 0.85);
+      margin: 0 auto 27px;
+      color: rgba(255, 255, 255, 0.86);
     }
 
     /* FOOTER */
     .site-footer {
+      border-top: 1px solid var(--border);
       background: #f7f7f7;
-      border-top: 1px solid var(--border-color);
     }
 
     .footer-grid {
@@ -515,13 +487,13 @@
 
     .footer-brand p {
       margin: 0;
-      color: #656565;
+      color: #666666;
       font-size: 14px;
     }
 
     .footer-column h3 {
       margin: 3px 0 16px;
-      color: var(--primary-color);
+      color: var(--primary);
       font-size: 17px;
     }
 
@@ -542,7 +514,7 @@
     }
 
     .footer-column a:hover {
-      color: var(--secondary-color);
+      color: var(--green);
     }
 
     .social-links {
@@ -559,23 +531,23 @@
       justify-content: center;
       border: 1px solid #dcdcdc;
       border-radius: 50%;
+      color: var(--primary);
       background: var(--white);
-      color: var(--primary-color);
       font-size: 13px;
       font-weight: 700;
       transition: 0.2s ease;
     }
 
     .social-links a:hover {
-      border-color: var(--secondary-color);
-      background: var(--secondary-color);
+      border-color: var(--green);
       color: var(--white);
+      background: var(--green);
     }
 
     .copyright {
       padding: 16px 0;
-      background: var(--dark-color);
-      color: #bcbcbc;
+      color: #bdbdbd;
+      background: var(--dark);
       text-align: center;
       font-size: 14px;
     }
@@ -586,7 +558,7 @@
     }
 
     /* RESPONSIVE */
-    @media (max-width: 950px) {
+    @media (max-width: 980px) {
       .category-grid,
       .catalog-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -623,11 +595,11 @@
         font-size: 12px;
       }
 
-      .hero-section {
-        padding: 52px 0;
+      .hero {
+        padding: 54px 0;
       }
 
-      .hero-section p {
+      .hero p {
         font-size: 15px;
       }
 
@@ -659,7 +631,7 @@
 
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: 23px;
+        gap: 24px;
       }
     }
   </style>
@@ -690,7 +662,7 @@
 
   <main>
 
-    <section class="hero-section">
+    <section class="hero">
       <div class="container hero-content">
 
         <span class="hero-label">Platform Android Indonesia</span>
@@ -698,8 +670,8 @@
         <h1>Temukan Game dan Aplikasi Android di LITEAPKS</h1>
 
         <p>
-          LITEAPKS adalah tempat untuk menjelajahi informasi game dan aplikasi Android terbaru.
-          Temukan berbagai kategori game, aplikasi, berita Android, serta konten populer melalui website utama LITEAPKS.
+          LITEAPKS menyediakan informasi game dan aplikasi Android terbaru.
+          Jelajahi koleksi game, aplikasi, artikel, kategori, serta pembaruan konten Android melalui website utama.
         </p>
 
         <div class="hero-buttons">
@@ -721,33 +693,33 @@
         <h2 class="section-title">Jelajahi Kategori LITEAPKS</h2>
 
         <p class="section-desc">
-          Kunjungi kategori utama LITEAPKS untuk menemukan game, aplikasi, berita, dan berbagai informasi Android lainnya.
+          Kunjungi kategori utama untuk menemukan game, aplikasi, berita, serta beragam informasi Android terbaru.
         </p>
 
         <div class="category-grid">
 
           <a class="category-card" href="https://liteapks.id/game/">
             <div class="category-icon">🎮</div>
-            <h2>Game MOD APK</h2>
-            <p>Jelajahi game Android dari genre aksi, balapan, simulasi, strategi, RPG, petualangan, dan masih banyak lagi.</p>
+            <h2>Game Android</h2>
+            <p>Jelajahi game aksi, simulasi, balapan, arcade, puzzle, strategi, olahraga, dan banyak genre lainnya.</p>
           </a>
 
           <a class="category-card" href="https://liteapks.id/app/">
             <div class="category-icon">📱</div>
             <h2>Aplikasi Android</h2>
-            <p>Temukan aplikasi hiburan, edit foto, produktivitas, alat, media sosial, dan aplikasi populer untuk Android.</p>
+            <p>Temukan aplikasi hiburan, media sosial, edit video, fotografi, alat, dan konten Android populer.</p>
           </a>
 
           <a class="category-card" href="https://liteapks.id/tin-tuc/berita-game/">
             <div class="category-icon">📰</div>
             <h2>Berita Game</h2>
-            <p>Baca informasi terbaru mengenai update game, perilisan game, event, dan perkembangan dunia game Android.</p>
+            <p>Baca artikel pembaruan game, perilisan terbaru, informasi fitur, dan referensi game Android.</p>
           </a>
 
           <a class="category-card" href="https://liteapks.id/tin-tuc/berita-aplikasi/">
             <div class="category-icon">✨</div>
             <h2>Berita Aplikasi</h2>
-            <p>Temukan rekomendasi serta pembaruan aplikasi Android yang menarik untuk digunakan sehari-hari.</p>
+            <p>Lihat rekomendasi aplikasi, pembaruan versi, serta artikel seputar penggunaan aplikasi Android.</p>
           </a>
 
         </div>
@@ -764,12 +736,12 @@
             <h2>Tentang LITEAPKS</h2>
 
             <p>
-              LITEAPKS adalah platform yang membagikan informasi seputar game dan aplikasi Android untuk pengguna Indonesia.
-              Pengunjung dapat menemukan berbagai pilihan konten Android dalam satu tempat yang mudah dijelajahi.
+              LITEAPKS adalah platform informasi game dan aplikasi Android untuk pengguna Indonesia.
+              Website ini memudahkan pengunjung dalam menjelajahi kategori game, aplikasi, dan artikel Android dalam satu tempat.
             </p>
 
             <p>
-              Mulai dari game populer, aplikasi hiburan, aplikasi produktivitas, hingga berita Android terbaru, semuanya dapat ditemukan melalui kategori utama di Liteapks.id.
+              Mulai dari game simulasi, game aksi, aplikasi hiburan, aplikasi edit video, sampai artikel pembaruan Android dapat ditemukan melalui halaman utama LITEAPKS.
             </p>
 
             <a class="button-primary" href="https://liteapks.id/">
@@ -792,185 +764,269 @@
         <h2 class="section-title">Game dan Aplikasi Populer</h2>
 
         <p class="section-desc">
-          Jelajahi berbagai game dan aplikasi Android populer melalui LITEAPKS. Pilih judul yang ingin kamu cari untuk melihat informasi selengkapnya.
+          Pilih game atau aplikasi yang ingin kamu lihat. Semua tombol dan gambar di bawah mengarah langsung ke halaman LITEAPKS.
         </p>
 
+        <!-- GAME -->
         <div class="catalog-group">
+
           <div class="catalog-heading">
-            <h2>Game Android Populer</h2>
+            <h2>8 Game Android Populer</h2>
             <a href="https://liteapks.id/game/">Lihat Semua Game →</a>
           </div>
 
           <div class="catalog-grid">
 
-            <a class="catalog-card" href="https://liteapks.id/?s=Subway%20Surfers">
-              <div class="catalog-cover game-cover-1"><span class="catalog-icon">🏃</span></div>
+            <a class="catalog-card" href="https://liteapks.id/township-mod-apk/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/06/township-mod-apk-5.jpg" alt="Township MOD APK">
+              </div>
               <div class="catalog-content">
-                <span class="catalog-tag">Game Arcade</span>
+                <span class="catalog-tag">Simulasi</span>
+                <h3>Township MOD APK</h3>
+                <p>Bangun kota, kelola pertanian, produksi barang, dan kembangkan area permainan.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/lamar-idle-vlogger/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/06/lamar-idle-vlogger-mod-apk-4.jpg" alt="Lamar Idle Vlogger MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">Simulasi</span>
+                <h3>Lamar Idle Vlogger MOD APK</h3>
+                <p>Jalankan perjalanan karakter untuk membangun karier, penghasilan, dan progres lebih cepat.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/theotown/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/06/theotown-mod-apk-1.webp" alt="TheoTown MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">City Builder</span>
+                <h3>TheoTown MOD APK</h3>
+                <p>Rancang kota digital, bangun kawasan baru, dan kelola perkembangan wilayahmu.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/subway-surfers-mod-apk/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/04/subway-surfers-apk-mod-6.jpg" alt="Subway Surfers MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">Arcade</span>
                 <h3>Subway Surfers MOD APK</h3>
-                <p>Game lari tanpa akhir dengan karakter, papan, dan tantangan menarik.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <p>Game endless runner dengan karakter, papan, jalur kereta, dan tantangan skor tinggi.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=Minecraft">
-              <div class="catalog-cover game-cover-2"><span class="catalog-icon">⛏️</span></div>
+            <a class="catalog-card" href="https://liteapks.id/bus-simulator-ultimate-mod-apk/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/04/bus-simulator-ultimate-mod-apk-3.jpg" alt="Bus Simulator Ultimate MOD APK">
+              </div>
               <div class="catalog-content">
-                <span class="catalog-tag">Game Sandbox</span>
-                <h3>Minecraft MOD APK</h3>
-                <p>Bangun dunia sendiri, jelajahi map, dan bertahan dari berbagai mob.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Simulasi</span>
+                <h3>Bus Simulator Ultimate</h3>
+                <p>Rasakan pengalaman berkendara bus, membangun rute, dan mengelola transportasi.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=GTA%20San%20Andreas">
-              <div class="catalog-cover game-cover-3"><span class="catalog-icon">🚗</span></div>
+            <a class="catalog-card" href="https://liteapks.id/shadow-fight-3-mod-apk/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/04/banner-hack-shadow-fight-3-3.webp" alt="Shadow Fight 3 MOD APK">
+              </div>
               <div class="catalog-content">
-                <span class="catalog-tag">Game Action</span>
-                <h3>GTA San Andreas MOD APK</h3>
-                <p>Jelajahi kota luas, selesaikan misi, dan nikmati gameplay open-world.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Fighting RPG</span>
+                <h3>Shadow Fight 3 MOD APK</h3>
+                <p>Jelajahi pertarungan aksi dengan karakter, equipment, dan sistem perkembangan RPG.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=Roblox">
-              <div class="catalog-cover game-cover-4"><span class="catalog-icon">🧱</span></div>
+            <a class="catalog-card" href="https://liteapks.id/football-rising-star-mod-apk/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/04/football-rising-star-mod-apk-unlimited-money.jpg" alt="Football Rising Star MOD APK">
+              </div>
               <div class="catalog-content">
-                <span class="catalog-tag">Game Multiplayer</span>
-                <h3>Roblox MOD APK</h3>
-                <p>Mainkan banyak mini game dan jelajahi pengalaman buatan komunitas.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Olahraga</span>
+                <h3>Football Rising Star MOD APK</h3>
+                <p>Bangun karier pemain sepak bola, tingkatkan kemampuan, dan kejar berbagai pencapaian.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=Free%20Fire">
-              <div class="catalog-cover game-cover-5"><span class="catalog-icon">🔥</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Battle Royale</span>
-                <h3>Free Fire MOD APK</h3>
-                <p>Game battle royale cepat dengan karakter, senjata, dan mode menarik.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+            <a class="catalog-card" href="https://liteapks.id/blockman-go-mod-apk/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/04/blockman-go-mod-apk-1.jpg" alt="Blockman Go MOD APK">
               </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=Mobile%20Legends">
-              <div class="catalog-cover game-cover-6"><span class="catalog-icon">⚔️</span></div>
               <div class="catalog-content">
-                <span class="catalog-tag">Game MOBA</span>
-                <h3>Mobile Legends MOD APK</h3>
-                <p>Rasakan pertarungan tim 5v5 dengan hero dan strategi berbeda.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
-              </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=Car%20Parking%20Multiplayer">
-              <div class="catalog-cover game-cover-7"><span class="catalog-icon">🏎️</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Game Simulation</span>
-                <h3>Car Parking Multiplayer</h3>
-                <p>Driving simulator dengan dunia terbuka dan berbagai pilihan kendaraan.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
-              </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=Bus%20Simulator%20Indonesia">
-              <div class="catalog-cover game-cover-8"><span class="catalog-icon">🚌</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Game Simulation</span>
-                <h3>Bus Simulator Indonesia</h3>
-                <p>Rasakan pengalaman menjadi sopir bus dengan nuansa khas Indonesia.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Arcade Sandbox</span>
+                <h3>Blockman Go MOD APK</h3>
+                <p>Masuk ke dunia mini game, mode sosial, roleplay, parkour, dan permainan multiplayer.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Game</span>
+                </div>
               </div>
             </a>
 
           </div>
         </div>
 
+        <!-- APP -->
         <div class="catalog-group">
+
           <div class="catalog-heading">
-            <h2>Aplikasi Android Populer</h2>
+            <h2>8 Aplikasi dan Kategori Populer</h2>
             <a href="https://liteapks.id/app/">Lihat Semua Aplikasi →</a>
           </div>
 
           <div class="catalog-grid">
 
-            <a class="catalog-card" href="https://liteapks.id/?s=CapCut">
-              <div class="catalog-cover app-cover-1"><span class="catalog-icon">🎬</span></div>
+            <a class="catalog-card" href="https://liteapks.id/bling2/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/06/Bling2-Live-MOD-APK-1.jpg" alt="Bling2 Live MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">Sosial</span>
+                <h3>Bling2 Live MOD APK</h3>
+                <p>Aplikasi hiburan sosial dengan room, live streaming, chat, dan aktivitas komunitas.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Apps</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/mango-live/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/05/mango-live-mod-apk-2.jpg" alt="Mango Live MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">Hiburan</span>
+                <h3>Mango Live MOD APK</h3>
+                <p>Temukan informasi fitur room, live streaming, chat, serta pengalaman hiburan online.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Apps</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/youtube-lite/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/05/youtube-lite-mod-apk-4.jpg" alt="Youtube Lite MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">Hiburan</span>
+                <h3>Youtube Lite MOD APK</h3>
+                <p>Lihat informasi aplikasi video Android untuk streaming, konten hiburan, dan penggunaan ringan.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Apps</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/alight-motion/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/05/Alight-Motion-mod-apk-3.jpg" alt="Alight Motion MOD APK">
+              </div>
               <div class="catalog-content">
                 <span class="catalog-tag">Video Editor</span>
+                <h3>Alight Motion MOD APK</h3>
+                <p>Jelajahi aplikasi editing video, animasi, motion graphic, serta berbagai tools kreatif.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Apps</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="catalog-card" href="https://liteapks.id/capcut/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/05/Capcut-Mod-Apk-3.jpg" alt="CapCut MOD APK">
+              </div>
+              <div class="catalog-content">
+                <span class="catalog-tag">Edit Video</span>
                 <h3>CapCut MOD APK</h3>
-                <p>Aplikasi edit video dengan efek, template, filter, dan fitur kreatif.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <p>Temukan referensi aplikasi editor video dengan template, efek, filter, dan fitur kreatif.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Detail →</span>
+                  <span>Apps</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=Spotify">
-              <div class="catalog-cover app-cover-2"><span class="catalog-icon">🎵</span></div>
+            <a class="catalog-card" href="https://liteapks.id/app/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/05/Capcut-Mod-Apk-4.jpg" alt="Aplikasi Edit Video Android">
+              </div>
               <div class="catalog-content">
-                <span class="catalog-tag">Music & Audio</span>
-                <h3>Spotify MOD APK</h3>
-                <p>Nikmati musik, podcast, playlist, dan berbagai konten audio favorit.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Kategori</span>
+                <h3>Aplikasi Edit Video Android</h3>
+                <p>Jelajahi koleksi aplikasi edit video, motion graphic, template, filter, dan efek kreatif.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Aplikasi →</span>
+                  <span>Apps</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=YouTube">
-              <div class="catalog-cover app-cover-3"><span class="catalog-icon">▶️</span></div>
+            <a class="catalog-card" href="https://liteapks.id/app/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/05/youtube-lite-mod-apk-1.jpg" alt="Aplikasi Hiburan Android">
+              </div>
               <div class="catalog-content">
-                <span class="catalog-tag">Entertainment</span>
-                <h3>YouTube MOD APK</h3>
-                <p>Tonton video, konten hiburan, musik, tutorial, dan kanal favorit.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Kategori</span>
+                <h3>Aplikasi Hiburan Android</h3>
+                <p>Temukan koleksi aplikasi untuk streaming video, hiburan digital, dan konten populer Android.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Aplikasi →</span>
+                  <span>Apps</span>
+                </div>
               </div>
             </a>
 
-            <a class="catalog-card" href="https://liteapks.id/?s=TikTok">
-              <div class="catalog-cover app-cover-4"><span class="catalog-icon">🎤</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Social Media</span>
-                <h3>TikTok MOD APK</h3>
-                <p>Jelajahi video pendek, konten viral, musik, dan hiburan harian.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+            <a class="catalog-card" href="https://liteapks.id/app/">
+              <div class="catalog-image">
+                <img loading="lazy" src="https://liteapks.id/wp-content/uploads/2026/06/Bling2-Live-MOD-APK-3.jpg" alt="Aplikasi Sosial Android">
               </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=PicsArt">
-              <div class="catalog-cover app-cover-5"><span class="catalog-icon">🖼️</span></div>
               <div class="catalog-content">
-                <span class="catalog-tag">Photo Editor</span>
-                <h3>PicsArt MOD APK</h3>
-                <p>Edit foto dengan filter, stiker, teks, efek, dan berbagai tools desain.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
-              </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=Canva">
-              <div class="catalog-cover app-cover-6"><span class="catalog-icon">🎨</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Design</span>
-                <h3>Canva MOD APK</h3>
-                <p>Buat desain poster, story, thumbnail, dan konten media sosial lebih mudah.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
-              </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=VPN">
-              <div class="catalog-cover app-cover-7"><span class="catalog-icon">🛡️</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Tools</span>
-                <h3>VPN Android</h3>
-                <p>Temukan berbagai aplikasi VPN dan tools Android untuk kebutuhan koneksi.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
-              </div>
-            </a>
-
-            <a class="catalog-card" href="https://liteapks.id/?s=Netflix">
-              <div class="catalog-cover app-cover-8"><span class="catalog-icon">📺</span></div>
-              <div class="catalog-content">
-                <span class="catalog-tag">Entertainment</span>
-                <h3>Netflix MOD APK</h3>
-                <p>Nikmati film, serial, dokumenter, dan konten hiburan melalui Android.</p>
-                <div class="catalog-meta"><span>Lihat Detail →</span><span>Android</span></div>
+                <span class="catalog-tag">Kategori</span>
+                <h3>Aplikasi Sosial Android</h3>
+                <p>Jelajahi kategori aplikasi sosial, komunikasi, live streaming, room, dan komunitas online.</p>
+                <div class="catalog-meta">
+                  <span>Lihat Aplikasi →</span>
+                  <span>Apps</span>
+                </div>
               </div>
             </a>
 
@@ -984,7 +1040,7 @@
       <h2>Jelajahi Game dan Aplikasi Android Sekarang</h2>
 
       <p>
-        Kunjungi LITEAPKS untuk melihat game, aplikasi, kategori Android, dan artikel terbaru dalam satu platform.
+        Kunjungi LITEAPKS untuk melihat koleksi game, aplikasi, artikel Android, dan kategori terbaru dalam satu platform.
       </p>
 
       <a class="button-primary" href="https://liteapks.id/">
@@ -1003,7 +1059,7 @@
         </a>
 
         <p>
-          LITEAPKS adalah platform informasi game dan aplikasi Android. Jelajahi game, aplikasi, kategori, serta berita Android melalui website utama.
+          LITEAPKS adalah platform informasi game dan aplikasi Android. Jelajahi kategori, artikel, serta berbagai konten Android melalui website utama.
         </p>
       </div>
 
@@ -1025,7 +1081,7 @@
           <li><a href="https://liteapks.id/">Beranda</a></li>
           <li><a href="https://liteapks.id/?s=game">Cari Game</a></li>
           <li><a href="https://liteapks.id/?s=aplikasi">Cari Aplikasi</a></li>
-          <li><a href="mailto:contact@liteapks.id">Hubungi Kami</a></li>
+          <li><a href="https://liteapks.id/hubungi-kami/">Hubungi Kami</a></li>
         </ul>
       </div>
 
@@ -1038,18 +1094,17 @@
           <a href="https://x.com/liteapksid" aria-label="X">X</a>
           <a href="https://id.pinterest.com/liteapskid/" aria-label="Pinterest">P</a>
           <a href="https://www.linkedin.com/in/liteapks/" aria-label="LinkedIn">in</a>
-          <a href="https://youtube.com/@liteapksid" aria-label="Youtube">▶</a>
+          <a href="https://youtube.com/@liteapksid" aria-label="YouTube">▶</a>
         </div>
       </div>
 
     </div>
 
     <div class="copyright">
-      Copyright 2026 ©
-      <a href="https://liteapks.id/">LITEAPKS</a>.
-      All rights reserved.
+      Copyright 2026 © <a href="https://liteapks.id/">LITEAPKS</a>. All rights reserved.
     </div>
   </footer>
 
 </body>
 </html>
+```
